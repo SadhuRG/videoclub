@@ -1,4 +1,4 @@
 @extends('layouts.master')
 @section('content')
-    Pantalla principal
+    ZAPATERIA LOS MAS CAPOS DE CAPOS
 @stop

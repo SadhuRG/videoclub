@@ -57,20 +57,40 @@ Route::get('/login', function () {
 });
 
 
-Route::get('/catalog', function () {
-    return view('catalog.index');
+Route::get('/servicios', function () {
+    return view('servicios.create');
 });
 
-Route::get('/catalog/show/{id}', function ($id) {
-    return view('catalog.show', ['id' => $id]);
+Route::get('/servicios/edit/{id}', function ($id) {
+    return view('servicios.edit', ['id' => $id]);
 });
 
-Route::get('/catalog/create', function () {
-    return view('catalog.create');
+Route::get('/servicios/index/{id}', function ($id) {
+    return view('servicios.index', ['id' => $id]);
 });
 
-Route::get('/catalog/edit/{id}', function ($id) {
-    return view('catalog.edit', ['id' => $id]);
+Route::get('/servicios/show/{id}', function ($id) {
+    return view('servicios.show', ['id' => $id]);
+});
+
+Route::get('/servicios/edit/{id}', function ($id) {
+    return view('servicios.edit', ['id' => $id]);
+});
+
+Route::get('/blog', function () {
+    return view('blog.create');
+});
+
+Route::get('/proyectos', function () {
+    return view('proyectos.create');
+});
+
+Route::get('/clientes', function () {
+    return view('clientes.create');
+});
+
+Route::get('/contacto', function () {
+    return view('contacto.create');
 });
 
 
