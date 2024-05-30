@@ -16,5 +16,10 @@
         <li>
         -Empastado
         </li>
+
+        <li>
+        -Pintura
+        </li>
+
     </ul>
 @stop
